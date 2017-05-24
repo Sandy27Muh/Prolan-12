@@ -1,0 +1,17 @@
+"TAGGING INTERFACES"
+
+Tag Interfaces adalah istilah Java. Ini adalah Interfaces kosong yang diterapkan kelas untuk mengklaim keanggotaan dan bagian dalam satu set kelas. Misalnya, jika sebuah kelas menerapkan interfaces Serializable, ia mengklaim dapat serializable - untuk menjadi anggota rangkaian kelas serializable. Interfaces sendiri tidak menyatakan metode; Itu hanya sebuah tag
+Ada masalah dengan TagInterfaces. Mereka sangat berarti bagi Java VM itu sendiri. VM Java tahu untuk memainkan beberapa "trik" khusus dengan kelas kloning atau serializable. TagInterface hanyalah semacam bendera boolean untuk programmer. Itu benar atau salah (instanceof operator). Ini juga menyediakan kompatibilitas tipe dengan interface, namun karena interface tidak mendeklarasikan metode apapun, tidak ada gunanya yang bisa diimplementasikan untuk mendukung interface.
+TagInterfaces sering berguna bila digunakan dalam kombinasi dengan Refleksi. Seperti dijelaskan di atas, mereka adalah cara untuk mengaitkan boolean "flags" dengan kelas atau antarmuka. Bendera ini dapat diperiksa dengan kode reflektif yang ditulis untuk melakukan operasi generik pada objek apa pun, seperti metode kelas dasar yang FallBackOnReflection. Beginilah cara antarmuka Serializable digunakan, misalnya.
+Inilah contoh lain, dari kerangka protokol jaringan. Sebuah stack protokol dibagi menjadi lapisan protokol, yang masing-masing menyediakan Interfaces untuk transmisi dan penerimaan data, dan juga dapat menyediakan satu atau lebih antarmuka kontrol. Aplikasi yang menggunakan stack, dapat meminta antarmuka kontrol dengan melewatkan objek Kelas yang mewakili jenis antarmuka kontrol yang diperlukan ke metode kueri lapisan protokol di bagian atas tumpukan.
+Kelas dasar disediakan untuk memudahkan penerapan lapisan protokol. Kelas dasar jatuh pada refleksi untuk menemukan kontrol Interfaces. Ini menghitung antarmuka yang diterapkan oleh kelas lapisan beton untuk menemukan yang memperpanjang TagInterface yang digunakan untuk mengidentifikasi antarmuka kontrol dan kompatibel dengan antarmuka kontrol yang dibutuhkan oleh aplikasi.
+Oleh karena itu, semua antarmuka kontrol protokol harus didefinisikan untuk memperpanjang TagInterface. Ini membantu implementasi kelas dasar reflektif, dan menghentikan aplikasi yang meminta antarmuka konkret atau kelas yang bukan antarmuka kontrol. TagInterface digunakan sebagai predikat boolean bila tidak memungkinkan untuk menentukan predikat itu sebagai metode karena objek tidak terkait dengan warisan, atau karena Anda tidak dapat menambahkan metode ke kelas dasar yang sama.
+Kelemahannya dengan TagInterface adalah mendefinisikan predikat atas instance kelas dan semua kelas berasal dari kelas itu. Antarmuka tag tidak memungkinkan predikat tersebut dievaluasi secara dinamis, atau diganti di kelas turunan. Hal ini dapat menyebabkan masalah nantinya bila Anda ingin menambahkan fitur tersebut.
+
+contohnya :
+@Serializable()
+    public class MyClass {
+    }
+
+maka akan menjadi
+  new MyClass().getClass().isAnnotationPresent(Serializable.class) // assuming that Serializable was an annotation
