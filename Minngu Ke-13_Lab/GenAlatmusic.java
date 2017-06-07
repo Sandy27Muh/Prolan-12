@@ -1,11 +1,11 @@
 public class GenAlatmusic <A> {
     
     public void NamaPembeli(String namaPembeli) {
-        System.out.println("Nama Pembeli          : " +namaPembeli);
+        System.out.println("Nama Pembeli        : " +namaPembeli);
     }
     public <T,N> void Gitar (T namaGitar, N hargaGitar) {
-        System.out.println("Nama  Gitar          : " +namaGitar);
-        System.out.println("Harga Gitar           : " +hargaGitar);
+        System.out.println("Nama  Gitar         : " +namaGitar);
+        System.out.println("Harga Gitar         : " +hargaGitar);
     }
     public <T,N> void Bass (T namaBass, N hargaBass) {
         System.out.println("Nama Bass           : " +namaBass);
