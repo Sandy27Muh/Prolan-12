@@ -1,0 +1,112 @@
+*----------------------------------------------------------------------------------------------------------------------------*
+| Pertemuan |      Materi       |                           Penjelasan                                     |  folder Github  |
+*----------------------------------------------------------------------------------------------------------------------------*
+|     1     |Pendahuluan        | * Pengenalan Java dan sejarahnya                                         |      Minggu     |
+|           |                   | * Sintaks di Java                                                        |        1        |
+|           |                   | * instalasi java (JDK,JRE, Netbeans)                                     |                 |
+|           |                   | * Menjalankan Java di CMD                                                |                 |
+|           |                   | * Setting Path untuk Java                                     |          |                 |
+|           |                   | * membuat program yang menampilkan hello wordl dengan sistem "SOUT" di   |                 |
+|           |                   |   notepad dan netbeans                                                   |                 |
+*----------------------------------------------------------------------------------------------------------------------------*
+|     2     | Konsep Dasar PBO  | * menjelaskan konsep oop yaitu cara pikir atau sudut pandang dalam       |      Minggu     |
+|           | -OOP              |   membuat program berdasarkan objek                                      |        2        |
+|           |                   | * perbedaan prosedural dan oop bisa dilihat dari type dan variabel pada  |                 |
+|           |                   |   prosedural dan class dan objek pada oop                                |                 |
+|           |                   | * pengenalan dan pembuatan input dan output pada java                    |                 |
+*----------------------------------------------------------------------------------------------------------------------------*
+|     3     | kelas dan objek   | * kelas merupakan bentuk rancangan atau klasifikasi dari suatu objek. Di |      Minggu     |
+|           | -OOP              |   dalamnya terdapat atribut dan method dari objek yang dideklasikan dari |        3        |
+|           |                   |   pada kelas                                                             |                 |
+|           |                   | * objek adalah intasiasi atau perwujudan dari kelas itu sendiri          |                 |
+|           |                   | * menjelaskan tentang tipe data pada java (integer, float , char, string)|                 |
+*----------------------------------------------------------------------------------------------------------------------------*
+|     4     | Method,Konstruktor| * pembuatan method atau fungsi, memiliki keyword void(tidak mengembalikan|      Minggu     |
+|           | ,This, dan Atribut|   nilai) dan return type(yang mengembalikan nilai)                       |        4        |
+|           | -OOP              | * parameter yaitu data dalam repesentasi variabel yang ditulis di header |                 |
+|           |                   |   method                                                                 |                 |
+|           |                   | * penggunaan this digunakan untuk referensi objek, membedakan local dan  |                 |
+|           |                   |   global , dgunakan di konstruktor dan method                            |                 |
+|           |                   | * menjelaskn tentang operator pada java misal perbandingan,aritmatika dll|                 |
+*----------------------------------------------------------------------------------------------------------------------------*
+|     5     | Inheritance       | * membuat kelas yang diturunkan dari kelas lain , untuk menurunkannya    |      Minggu     |
+|           | (Pewarisan)       |   gunakan keyword extends (contoh class Karywan extends resepsionis)     |        5        |
+|           |                   | * penjelasan singkat ovveride dalam inheritance yaitu fungsi yang dimliki|                 |
+|           |                   |   super kelas yang dapat di modifikasi di dub kelas                      |                 |
+*----------------------------------------------------------------------------------------------------------------------------*
+|     6     | Overriding        | * memodifikasi atau mengimplementasikan moethod yang diturunkan dari     |      Minggu     |
+|           |                   |   super kelas .                                                          |        6        |
+|           |                   | * syarat nya kelas itu harus melalui proses inheritance                  |                 |
+|           |                   | * untuk method final dan private tidak bisa di override, dalam penulisan |                 |
+|           |                   |   menggunakan keyword @ovveride.                                         |                 |
+|           |                   | * jika tidak ingin di override makan bisa menggunakan keyword super      |                 |
+|           |                   |                                                                          |                 |
+|           |                   |                                                                          |                 |
+*----------------------------------------------------------------------------------------------------------------------------*
+|     7     | Polimorfisme      | * polimorfisme adalah suatu objek yang memiliki kemampuan banyak bentuk  |      None       |
+|           |                   |   dalam pembuatan objek nya                                              |                 |
+|           |                   | * terjadi pada saat super kelas dijadikan reference objek di sub kelas   |                 |
+*----------------------------------------------------------------------------------------------------------------------------*
+|     8     | Abstraction       | * cara atau proses menyembunyikan detil proses yang dilakukan            |      Minggu     |
+|           |                   | * digunakan pada deklarasi kelas, menggunakan keyword abstract           |        7        |
+|           |                   | * didalam nya bisa terdapat atau tidak punya atribut ataupun method      |                 |
+|           |                   | * kelas abstract harus di diturunkan kepada kelas lain                   |                 |
+|           |                   |   contoh                                                                 |                 |
+|           |                   |   public abstract class Mahasiswa {}                                     |                 |
+*----------------------------------------------------------------------------------------------------------------------------*
+|     9     | Method Abstract   | * menjelaskan method abstract yaitu method yang tidak memliki implement  |      Minggu     |
+|           |                   |   pada badan methodnya                                                   |        8        |
+|           |                   | * pembuatan method getter setter                                         |                 |
+*----------------------------------------------------------------------------------------------------------------------------*
+|     10    | Encapsulation     | * pembungkusan yaitu salah satu konsep pada oop yang membungkus data dan | Muh_Nur_Sanjaya |
+|           |                   |   fungsi dari kelas menjadi suatu kesatuan                               |     0115271     |
+|           |                   | * bisa di sebut konsep penyembunyian                                     |encapintegration |
+|           |                   | * pembuatan konsep getter dan setter                                     |                 |
+|           |                   | * getter bisa dijadikan sebagai keluaran                                 |                 |
+|           |                   | * setter nya dijadikan inputan data                                      |                 |
+*----------------------------------------------------------------------------------------------------------------------------*
+|     11    | Interface         | * merupakn reference type yang hampir mirip dengan kelas                 |      Minggu     |
+|           |                   | * isi pada interface merupakan method abstract                           |        11       |
+|           |                   | * menggunakan keyword interface                                          |                 |
+|           |                   | * cara menginmplemtasikan interface nya menggunakan keyword implements   |                 |
+|           |                   |   contoh                                                                 |                 |
+|           |                   |   class mhs implements mahasiswa{}                                       |                 |
+|           |                   | * sebuah inteface bisa mengextends beberapa interface                    |                 |
+*----------------------------------------------------------------------------------------------------------------------------*
+|     12    | Class Generic     | * merupakan kelas universal atau umum , atau belum ada spesifikasi data  |      Minggu     |
+|           |                   | * kelas generic bisa menentukan tipe kelas itu sendiri                   |        12       |
+|           |                   | * contoh pembuatan kelas generic                                         |                 |
+|           |                   |   class Karyawan <T> {                                                   |                 |
+|           |                   |   private T type                                                         |                 |
+|           |                   |   }                                                                      |                 |
+|           |                   | * dan berikut contoh pembuatan objek nya                                 |                 |
+|           |                   |   Karyawan <String> kry = new Karyawan<>();                              |                 |
+*----------------------------------------------------------------------------------------------------------------------------*
+|     13    | Generic Method    | * method yang bisa menentukan tipe data itu sendiri, sama seperti kelas  |     improve     |
+|           |                   |   generic                                                                |      Minggu     |
+|           |                   | * contoh pendeklasian method generic                                     |        12       |
+|           |                   |   public class genApp{                                                   |      Generic    |
+|           |                   |   private static <T> void cek {}                                         |                 |
+|           |                   |   }                                                                      |                 |
+|           |                   | * access modifier <T>/<N> (bisa dengan yang lain) void namamethod(T() a) |                 |
+|           |                   | * improve ke program yang sudah dbuat sebelumnya                         |                 |
+*----------------------------------------------------------------------------------------------------------------------------*
+|     14    | Today sprint      | * latihan pembuatan program dilab                                        |      Minggu     |
+|           | task (TST)        |                                                                          |        13       |
+*----------------------------------------------------------------------------------------------------------------------------*
+|     15    | package           | * package bisa dikatakan sebagai folder supaya terhidar dari bentrok     |      Minggu     |
+|           |                   |   persamaan kelas, interface, dll.                                       |        14       |
+|           |                   | * package juga bisa memproteksi pasa kelas agar tidak bisa di akses oleh |                 |
+|           |                   |   sembarang kelas lain                                                   |                 |
+|           |                   | * cara membuat packgage == package namapackage;                          |                 |
+|           |                   |   ditulis di awal kode program                                           |                 |
+|           |                   | * kelas atau interface yang di bungkus atau di package maka berarti      |                 |
+|           |                   |   kelas dan iterface tersebut saling berhubungan                         |                 |
+|           |                   | * package satu dengan yang lainnya bisa di akses atau dihubungkan dengan |                 |
+|           |                   |   cara import namapackage.namakelas;                                     |                 |
+*----------------------------------------------------------------------------------------------------------------------------*
+
+                                                   *****Muh_Nur_Sanjaya*****
+                                                      *****10115271*****
+                                                     ******Prolan_12*****
+                                                     ******Kelompok_3*****
