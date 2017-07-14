@@ -1,4 +1,4 @@
-`public class Sandy extends Mahasiswa {
+public class Sandy extends Mahasiswa {
 
     @Override
     void kuliah() {
