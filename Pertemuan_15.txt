@@ -80,7 +80,7 @@
 |           |                   |   private T type                                                         |                 |
 |           |                   |   }                                                                      |                 |
 |           |                   | * dan berikut contoh pembuatan objek nya                                 |                 |
-|           |                   |   Karyawan <String> kry = new Karyawan<>();                              |                 |
+|           |                   |   Mahasiswa <String> mhs = new Mahasiswa<>();                            |                 |
 *----------------------------------------------------------------------------------------------------------------------------*
 |     13    | Generic Method    | * method yang bisa menentukan tipe data itu sendiri, sama seperti kelas  |     improve     |
 |           |                   |   generic                                                                |      Minggu     |
